@@ -1,29 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karan | Operations Supervisor DHA2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-.card {
-max-width: 420px;
-margin: 60px auto;
-background: white;
-padding: 35px;
-border-radius: 10px;
-border-left: 6px solid #FF9900;
-font-family: Arial;
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ background: #f6f7f8;
 }
-h1 { color: #232F3E; margin-bottom: 5px; }
-h2 { font-size: 14px; color: #666; }
-a {
-display: block;
-margin-top: 12px;
-color: #232F3E;
-text-decoration: none;
+
+.card {
+ max-width: 420px;
+ margin: 50px auto;
+ background: #ffffff;
+ padding: 30px;
+ text-align: center;
+ border-radius: 12px;
+ border-top: 6px solid #FF9900;
+ box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Amazon logo text */
+.logo {
+ font-size: 22px;
+ font-weight: bold;
+ color: #232F3E;
+ margin-bottom: 20px;
+}
+
+.logo span {
+ color: #FF9900;
+}
+
+h1 {
+ margin-bottom: 5px;
+ font-size: 26px;
+ color: #232F3E;
+}
+
+h2 {
+ margin-top: 0;
+ font-size: 16px;
+ color: #232F3E;
+ font-weight: normal;
+}
+
+h3 {
+ margin-top: 5px;
+ font-size: 14px;
+ color: #666;
+ font-weight: normal;
+}
+
+.address {
+ margin: 20px 0;
+ font-size: 14px;
+ color: #444;
+ line-height: 1.5;
+}
+
+a.btn {
+ display: block;
+ margin: 14px 0;
+ padding: 14px;
+ background: #232F3E;
+ color: #ffffff;
+ text-decoration: none;
+ border-radius: 8px;
+ font-size: 16px;
+ transition: background 0.2s ease;
+}
+
+a.btn:hover {
+ background: #FF9900;
+ color: #232F3E;
+}
+
+.save {
+ background: #FF9900;
+ color: #232F3E;
+ font-weight: bold;
+}
+
+.save:hover {
+ background: #232F3E;
+ color: #ffffff;
+}
+
+/* QR Code */
+.qr {
+ margin-top: 25px;
+}
+
+.qr img {
+ width: 140px;
+ height: 140px;
+}
+
+.qr p {
+ font-size: 12px;
+ color: #666;
+ margin-top: 8px;
 }
 </style>
+</head>
 
+<body>
 <div class="card">
-<h1>Karan Patel</h1>
-<h2>Operations Supervisor · DS-DHA2</h2>
 
-<a href="tel:+447770823713">📞 +44 7770 823713</a>
-<a href="mailto:karbpate@amazon.co.uk">✉️ karbpate@amazon.co.uk</a>
-<a href="https://wa.me/447770823713">💬 WhatsApp</a>
-<a href="karan-patel.vcf" download>💾 Save Contact</a>
+ <!-- Amazon Logo -->
+ <div class="logo">
+ amazon<span>.</span>
+ </div>
+
+ <h1>Karan Patel</h1>
+ <h2>Operations Supervisor</h2>
+ <h3>DS-DHA2</h3>
+
+ <div class="address">
+ Amazon Delivery Station DHA2<br>
+ United Kingdom
+ </div>
+
+ <a class="btn" href="tel:+447770823713"> Call</a>
+ <a class="btn" href="mailto:karbpate@amazon.co.uk"> Email</a>
+ <a class="btn" href="https://wa.me/447770823713" target="_blank"> WhatsApp</a>
+ <a class="btn" href="https://linkedin.com/in/yourprofile" target="_blank"> LinkedIn</a>
+
+ <a class="btn save" href="karan-patel.vcf" download> Save Contact</a>
+
+ <!-- QR Code -->
+ <div class="qr">
+ <img 
+ src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://karan34uk.github.io/My-Profile/" 
+ alt="QR Code">
+ <p>Scan to save my contact</p>
+ </div>
+
 </div>
+</body>
+</html>
